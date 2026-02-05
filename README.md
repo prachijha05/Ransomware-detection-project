@@ -74,7 +74,9 @@ RansomwareProject/
 ---
 
 ## ▶️ How to Run the Project
+Run the Project
 
+```bash
 Step 1: Install Dependencies
 pip install cryptography watchdog
 Step 2: Generate Encryption Key
