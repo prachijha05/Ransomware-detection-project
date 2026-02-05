@@ -1,4 +1,4 @@
-# 🛡️ Ransomware Detection and Simulation Project
+# 🛡️ Implementation and Detection of Ransomware Attacks
 
 A cybersecurity project that simulates ransomware behavior in a controlled sandbox environment and detects suspicious file activity in real time using Python.
 
