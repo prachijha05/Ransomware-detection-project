@@ -1,4 +1,4 @@
-# 🛡️ Implementation and Detection of Ransomware Attacks
+# 🛡️ Ransomware Simulation & Detection System
 
 A cybersecurity project that simulates ransomware behavior in a controlled sandbox environment and detects suspicious file activity in real time using Python.
 
@@ -6,9 +6,9 @@ A cybersecurity project that simulates ransomware behavior in a controlled sandb
 
 ## 📌 Project Overview
 
-This project demonstrates how ransomware encrypts files and how such activity can be detected by monitoring abnormal file system behavior.
+This project demonstrates how ransomware encrypts files and how such behavior can be detected through real-time monitoring of file system activity.
 
-It is designed strictly for **educational and security research purposes** and runs safely inside a sandbox directory.
+It is designed strictly for **educational and security research purposes** and operates safely within a sandbox directory.
 
 ---
 
@@ -22,30 +22,30 @@ It is designed strictly for **educational and security research purposes** and r
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
 - Python  
 - Cryptography (Fernet)  
 - Watchdog (File System Monitoring)  
 - OS & Time Modules  
-- Visual Studio Code  
 
 ---
 
 ## 📂 Project Structure
 
+
 RansomwareProject/
 │
-├── Sandbox/ # Folder monitored for ransomware activity
+├── Sandbox/
 │ ├── test1.txt
 │ ├── test2.txt
 │ └── notes.txt
 │
-├── create_key.py # Generates encryption key
-├── ransomware_simulator.py # Encrypts files (simulates ransomware)
-├── decryptor.py # Decrypts encrypted files
-├── detector.py # Detects suspicious file changes
-├── thekey.key # Encryption key file
+├── create_key.py
+├── ransomware_simulator.py
+├── decryptor.py
+├── detector.py
+├── thekey.key
 └── README.md
 
 
@@ -53,70 +53,55 @@ RansomwareProject/
 
 ## ⚙️ How It Works
 
-### 1️⃣ Key Generation
-- A secure encryption key is generated using the Cryptography library.
-- The key is stored in `thekey.key`.
+### 🔑 Key Generation
+- Generates a secure encryption key using Fernet  
+- Stores the key in `thekey.key`
 
-### 2️⃣ Ransomware Simulation
-- Files inside the `Sandbox` folder are encrypted.
-- File extensions are modified.
-- Ransomware-like behavior is simulated safely.
+### 🔐 Ransomware Simulation
+- Encrypts files inside the `Sandbox` folder  
+- Simulates ransomware-like behavior safely  
 
-### 3️⃣ Decryption
-- Encrypted files are restored using the same key.
-- Original content is recovered.
+### 🔓 Decryption
+- Uses the same key to restore original files  
 
-### 4️⃣ Real-Time Detection
-- Watchdog monitors file system activity.
-- Detects rapid and abnormal file changes.
-- Raises an alert when suspicious behavior is found.
+### 🚨 Real-Time Detection
+- Monitors file system using Watchdog  
+- Detects rapid and abnormal file changes  
+- Triggers alerts for suspicious activity  
 
 ---
 
-## ▶️ How to Run the Project
-Run the Project
+## ▶️ How to Run
 
 ```bash
-Step 1: Install Dependencies
+# Install dependencies
 pip install cryptography watchdog
-Step 2: Generate Encryption Key
+
+# Generate key
 python create_key.py
-Step 3: Start the Detector
+
+# Start detection system
 python detector.py
-Step 4: Run Ransomware Simulator
+
+# Run ransomware simulation
 python ransomware_simulator.py
-Step 5: Decrypt Files
+
+# Decrypt files
 python decryptor.py
 🚨 Sample Output
 --- Starting Real-Time Detector on folder: 'Sandbox' ---
 
 !!! WARNING: RANSOMWARE-LIKE ACTIVITY DETECTED !!!
 Detected multiple file changes in the last few seconds.
-🔐 Security Concepts Used
+🔐 Security Concepts Covered
 Symmetric Key Encryption
-
 File System Monitoring
-
 Behavioral Malware Detection
-
 Sandbox Testing
-
 Threat Simulation
-
 📚 Learning Outcomes
 Understood ransomware encryption mechanisms
-
-Learned to use the Python Cryptography library
-
 Implemented real-time file monitoring
-
-Gained experience in malware detection logic
-
-Built a real-world inspired cybersecurity project
-
-⚠️ Disclaimer
-This project is created strictly for educational purposes.
-
-It does NOT perform real malicious activities and must NOT be used to harm systems, networks, or users.
-
-The author is not responsible for any misuse of this project.
+Applied cryptography using Python
+Designed malware detection logic
+Built a real-world cybersecurity simulation project
