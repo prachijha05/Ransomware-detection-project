@@ -88,18 +88,19 @@ python ransomware_simulator.py
 
 # Decrypt files
 python decryptor.py
-🚨 Sample Output
+
+###🚨 Sample Output
 --- Starting Real-Time Detector on folder: 'Sandbox' ---
 
 !!! WARNING: RANSOMWARE-LIKE ACTIVITY DETECTED !!!
 Detected multiple file changes in the last few seconds.
-🔐 Security Concepts Covered
+###🔐 Security Concepts Covered
 Symmetric Key Encryption
 File System Monitoring
 Behavioral Malware Detection
 Sandbox Testing
 Threat Simulation
-📚 Learning Outcomes
+###📚 Learning Outcomes
 Understood ransomware encryption mechanisms
 Implemented real-time file monitoring
 Applied cryptography using Python
