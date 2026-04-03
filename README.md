@@ -32,8 +32,6 @@ It is designed strictly for **educational and security research purposes** and o
 ---
 
 ## 📂 Project Structure
-
-
 RansomwareProject/
 │
 ├── Sandbox/
@@ -47,8 +45,6 @@ RansomwareProject/
 ├── detector.py
 ├── thekey.key
 └── README.md
-
-
 ---
 
 ## ⚙️ How It Works
@@ -73,43 +69,35 @@ RansomwareProject/
 
 ## ▶️ How to Run
 
+### Install dependencies
 ```bash
-# Install dependencies
 pip install cryptography watchdog
-
-# Generate key
+Generate key
 python create_key.py
-
-# Start detection system
+Start detection system
 python detector.py
-
-# Run ransomware simulation
+Run ransomware simulation
 python ransomware_simulator.py
-
-# Decrypt files
+Decrypt files
 python decryptor.py
+```
 
 🚨 Sample Output
 --- Starting Real-Time Detector on folder: 'Sandbox' ---
 
 !!! WARNING: RANSOMWARE-LIKE ACTIVITY DETECTED !!!
 Detected multiple file changes in the last few seconds.
+
 🔐 Security Concepts Covered
 Symmetric Key Encryption
 File System Monitoring
 Behavioral Malware Detection
 Sandbox Testing
 Threat Simulation
+
 📚 Learning Outcomes
 Understood ransomware encryption mechanisms
 Implemented real-time file monitoring
 Applied cryptography using Python
 Designed malware detection logic
 Built a real-world cybersecurity simulation project
-⚠️ Disclaimer
-
-This project is created strictly for educational purposes.
-
-It does NOT perform real malicious activities and must NOT be used to harm systems, networks, or users.
-
-The author is not responsible for any misuse of this project.
